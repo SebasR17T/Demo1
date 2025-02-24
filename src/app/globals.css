@@ -30,4 +30,10 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+
+  .hero-bg {
+    background-image: url('/images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+  }
 }
