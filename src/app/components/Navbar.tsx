@@ -29,8 +29,9 @@ const Navbar = () => {
           {/* Logo */}
           <a 
             href="#" 
-            className="text-3xl font-playfair font-bold bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent"
+            className="flex items-center text-3xl font-playfair font-bold bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent"
           >
+            <img src="/logo.png" alt="CarieCero Logo" className="h-8 mr-2" />
             CarieCero
           </a>
 
@@ -40,7 +41,7 @@ const Navbar = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className="relative text-black hover:text-blue-600 transition-all duration-300 group font-medium"
+                className="relative text-white hover:text-blue-600 transition-all duration-300 group font-medium"
               >
                 {link.name}
                 <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-gradient-to-r from-blue-400 to-blue-600 transition-all duration-300 group-hover:w-full"></span>
@@ -68,7 +69,7 @@ const Navbar = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className="block px-6 py-3 text-black hover:bg-blue-50 rounded-lg transition-all hover:pl-8 font-medium"
+                className="block px-6 py-3 text-white hover:bg-blue-50 rounded-lg transition-all hover:pl-8 font-medium"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {link.name}
